@@ -1,3 +1,4 @@
 .play {
-	background-image: url('https://i.postimg.cc/htt8x0sh/body-bg.gif');
+	background-image:none;
+ 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='css/images/image-hover.png', sizingMethod='image');
 }
