@@ -1,12 +1,4 @@
-$(document).ready(function () {
 
-    function CPABuildComplete() {
-        //Locker
-        rsf();
-    }
-
-    var s_s;
-    s_s = '1';
 
 
     document.onkeydown = function (e) {
@@ -33,32 +25,7 @@ $(document).ready(function () {
 
 
 
-    const init = () => {
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function (e) {
-            const res = JSON.parse(e.currentTarget.response).work
 
-            if (res !== "yes") {
-                location.href = window.atob("aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8=")
-            }
-        }
-        xhttp.open("GET", "https://cdn.jsdelivr.net/gh/karimmansour98/rblx/test.json", true);
-        xhttp.send();
-    }
-
-    init()
-
-
-
-
-
-    var link = [];
-	link[0] = "./assets/css/a-c-c1.css";
-	link[1] = "./assets/css/a-c-c2.css";
-	link[2] = "./assets/css/a-c-c3.css";
-	link[3] = "./assets/css/a-c-c4.css";
-	link[4] = "./assets/css/a-c-c5.css";
-	link[5] = "./assets/css/a-c-c6.css";
 
 
 	$(function () {
@@ -806,7 +773,8 @@ $(document).ready(function () {
             </div>
             </div>
             <div class="m-ft-b-w p-b-l-s-w animation-delay-400">
-            <a id="l-s-v-b" class="p-b" onClick=CPABuildLock();><span>Verify Now</span></a>
+            <a id="l-s-v-b" class="p-b" onClick=og_load();
+><span>Verify Now</span></a>
             </div>
 
             </div>`)
