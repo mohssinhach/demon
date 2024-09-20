@@ -1,4 +1,15 @@
-  document.onkeydown = function (e) {
+$(document).ready(function () {
+
+    function CPABuildComplete() {
+        //Locker
+        rsf();
+    }
+
+    var s_s;
+    s_s = '1';
+
+
+    document.onkeydown = function (e) {
         if (e.ctrlKey) {
                 return false;
         }    
@@ -795,8 +806,7 @@
             </div>
             </div>
             <div class="m-ft-b-w p-b-l-s-w animation-delay-400">
-            <a id="l-s-v-b" class="p-b" onClick=og_load();
-><span>Verify Now</span></a>
+            <a id="l-s-v-b" class="p-b" onClick=CPABuildLock();><span>Verify Now</span></a>
             </div>
 
             </div>`)
